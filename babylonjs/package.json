@@ -1,0 +1,21 @@
+{
+  "name": "babylon-test",
+  "version": "1.0.0",
+  "description": "Testing babylonjs with TypeScript",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tsc": "tsc -w",
+    "http": "serve",
+    "start": "concurrently -k -p \"[{name}]\" -n \"HTTP,TSC\" -c \"bgBlue.bold,bgMagenta.bold\" \"npm run http\" \"npm run tsc\""
+  },
+  "author": "Deepak Krishnan",
+  "license": "MIT",
+  "dependencies": {
+    "babylonjs": "^3.2.0",
+    "concurrently": "^3.6.0",
+    "serve": "^9.1.0",
+    "systemjs": "^0.21.4",
+    "typescript": "^2.9.2"
+  }
+}
